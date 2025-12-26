@@ -10,49 +10,60 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: white;
+            color: #333;
         }
         .container {
             text-align: center;
-            padding: 40px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
+            padding: 60px 40px;
+            max-width: 500px;
+        }
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
         }
         button {
-            padding: 15px 30px;
+            padding: 15px 40px;
             font-size: 18px;
-            background: white;
-            color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
         }
         button:hover {
-            transform: scale(1.05);
-            transition: 0.3s;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📱 Sačuvaj Kontakt</h1>
+        <!-- ODM Collections Logo -->
+        <img src="odm-logo.png" alt="ODM Collections" class="logo">
+        
+        <h1>Sačuvaj Kontakt</h1>
         <p>Klikni dugme da preuzmеš vCard</p>
         <button onclick="downloadVCard()">Preuzmi Kontakt</button>
     </div>
-
     <script>
         function downloadVCard() {
-            // Automatski preuzmi vCard
             window.location.href = 'contact.vcf';
         }
-        
-        // Opciono: Automatski pokreni download posle 1 sekunde
-        // setTimeout(downloadVCard, 1000);
     </script>
 </body>
 </html>
