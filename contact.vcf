@@ -1,11 +1,13 @@
 BEGIN:VCARD
 VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 18.2.1//EN
+N:Blagojević;Ranko;;;
 FN:Ranko Blagojević
-TEL:+381 63 221 772
-EMAIL:ranko.blagojevic@odmc.rs
-ORG:ODMC
-URL:https://odmc.rs
-
+ORG:ODMC;
+EMAIL;type=INTERNET;type=HOME;type=pref:ranko.blagojevic@odmc.rs
+TEL;type=CELL;type=VOICE;type=pref:+38163221772
+item1.ADR;type=WORK;type=pref:;;\nLomina 20;Beograd;;;Serbia
+item1.X-ABADR:rs
+item2.URL;type=pref:https://www.odmc.rs
+item2.X-ABLabel:_$!<HomePage>!$_
 END:VCARD
-
-
